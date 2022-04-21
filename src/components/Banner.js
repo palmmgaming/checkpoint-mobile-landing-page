@@ -8,7 +8,6 @@ import Ambience_icon from "./images/Ambience_icon.svg";
 import Ambience from "./images/ambience.jpg";
 import { AiFillHeart } from "react-icons/ai";
 import { IoIosMusicalNotes } from "react-icons/io";
-import MobileShowcase from "./images/mobile.jpg";
 import VirtualSpace from "./images/VirtualSpace.svg";
 import Mood from "./images/mood.jpg";
 import EnvironmentIcon from "./images/Environment_icon.svg";
@@ -17,6 +16,9 @@ import MusicImg from "./images/Music.jpg";
 import Usecase from "./images/Usecase.jpg";
 import CheckpointIcon from "./images/checkpoint-icon.svg";
 import FeedbackImg from "./images/Community Review For Mobile.png";
+import PremiumCard from "./images/Premium Card.png";
+import MobileMockup from "./images/Mobile Mockup.png";
+import CheckpointApp from "./images/180px logo Checkpoint.png"
 
 let bannerData = {
   title_1: "Design",
@@ -45,17 +47,17 @@ function Banner() {
             <div className="sub-banner">
               <div className="sub-banner-container">
                 <img src={BetterSleep}></img>
-                <h1>Better Sleep</h1>
+                <p>Better Sleep</p>
               </div>
 
               <div className="sub-banner-container">
                 <img src={FocusMore}></img>
-                <h1>Focus More</h1>
+                <p>Focus More</p>
               </div>
 
               <div className="sub-banner-container">
                 <img src={EffectiveRelax}></img>
-                <h1>Effective Relaxation</h1>
+                <p>Effective Relaxation</p>
               </div>
             </div>
 
@@ -90,8 +92,7 @@ function Banner() {
                 <div className="text-center">
                   <h1>Virtual Space</h1>
                   <p>
-                    Change Your Screen to
-                    <strong> Peaceful Animated Background </strong>
+                    Change Your Screen to <strong> Peaceful Animated Background </strong>
                   </p>
                   <div className="icon-desc">
                     <p>
@@ -102,7 +103,7 @@ function Banner() {
                   </div>
                 </div>
                 <div className="mobile-showcase-image">
-                  <img src={MobileShowcase}></img>
+                  <img src={MobileMockup}></img>
                 </div>
               </section>
             </div>
@@ -181,7 +182,7 @@ function Banner() {
                 </div>
                 <div className="mobile-showcase-image">
                   <br />
-                  <img src={Usecase}></img>
+                  <img src={PremiumCard}></img>
                 </div>
 
                 <div className="text-center">
@@ -217,8 +218,41 @@ function Banner() {
               <img src={RealPhone}></img>
             </div>
           </div>
+
+          <div className="content">
+              <section>
+                <div className="center-mobile-app-section"> </div>
+
+                <div className="mobile-showcase-image">
+                  <div className="download-now">
+                    <p>Coming Soon!</p>
+                  </div>
+                  <div className="center-mobile-showcase-image">
+                    <div className="checkpoint-app">
+                    <img src={CheckpointApp}></img>
+                    <div className="checkpoint-app-desc">
+                      <p>Checkpoint.tokyo</p>
+                    </div>
+                    </div>
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </div>
+              </section>
+            </div>
         </div>
       </div>
+      <div className="footer">
+              <p>footer</p>
+              <div className="footer-container">
+                <div className="footer-text">
+                  <div className="footer-icon">
+                  </div>
+                </div>
+              </div>
+            </div>
     </div>
   );
 }
