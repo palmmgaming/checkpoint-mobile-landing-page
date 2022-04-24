@@ -19,6 +19,15 @@ import FeedbackImg from "./images/Community Review For Mobile.png";
 import PremiumCard from "./images/Premium Card.png";
 import MobileMockup from "./images/Mobile Mockup.png";
 import CheckpointApp from "./images/180px logo Checkpoint.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import checkpoint_logo_white from './images/Checkpoint logo white.svg'
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 
 let bannerData = {
   title_1: "Design",
@@ -176,7 +185,9 @@ function Banner() {
               <section>
                 <div className="center-icon"> </div>
                 <div className="text-center">
-                  <h1>Get Premium</h1>
+                  <div className="get-premium-header">
+                    <p>Get Premium</p>
+                  </div>
                   <h2>50% Discount</h2>
                   <p>to support us and unlock more perks</p>
                 </div>
@@ -209,6 +220,10 @@ function Banner() {
                 </div>
               </section>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 
             <div className="banner-text">
               <h1>{bannerData.title_1} </h1>
@@ -223,7 +238,7 @@ function Banner() {
               <section>
                 <div className="center-mobile-app-section"> </div>
 
-                <div className="mobile-showcase-image">
+                <div className="mobile-showcase-image-footer">
                   <div className="download-now">
                     <p>Coming Soon!</p>
                   </div>
@@ -244,16 +259,50 @@ function Banner() {
             </div>
         </div>
       </div>
-      <div className="footer">
-              <p>footer</p>
-              <div className="footer-container">
-                <div className="footer-text">
-                  <div className="footer-icon">
+      <div className="content">
+              <section className="footer">
+                <div className="center-mobile-app-section"> </div>
+
+                <div className="mobile-showcase-image-footer">
+                  <div className="footer-desc">
+                    <br/>
+                    <p href="https://www.checkpoint.tokyo/about">About Us</p>
+                    <p href="https://www.checkpoint.tokyo/policy">Policy</p>
+                    <br/>
                   </div>
-                </div>
-              </div>
+                  <div className="center-social-icon">
+                    <div className="social.icon">
+                    <a href="https://twitter.com/CheckpointTokyo" className="twitter social">
+                    <FontAwesomeIcon icon={faTwitter} size="1x" />
+                  </a>
+                  <a href="https://www.facebook.com/Checkpoint.tokyo"
+                    className="facebook social">
+                    <FontAwesomeIcon icon={faFacebookSquare} size="1x" />
+                  </a>
+                  <a href="https://www.instagram.com/checkpoint.tokyo/"
+                    className="instagram social">
+                    <FontAwesomeIcon icon={faInstagram} size="1x" />
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCyBC6LyIUwznEpO6pRt9pEg/featured"
+                    className="youtube social">
+                    <FontAwesomeIcon icon={faYoutube} size="1x" />
+                  </a>
+                    </div>
+                  </div>
+                  <div className="checkpoint-footer-logo-container">
+                    <div className="checkpoint-footer-logo">
+                      <br/>
+                    <img src={checkpoint_logo_white}></img>
+                  </div>
+                  <div className="all-right-reserved">
+                    <p>© 2022 Checkpoint.tokyo. All Rights Reserved</p>
+                    </div>
+                  </div>
+                  
+                  </div>
+              </section>
             </div>
-    </div>
+        </div>
   );
 }
 

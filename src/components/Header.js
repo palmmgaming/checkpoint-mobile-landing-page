@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import checkpoint_logo from './images/Dark Checkpoint logo with text.png'
+import buy_premium from './images/Buy Premium Button.svg'
 
 function Header() {
   return (
@@ -8,11 +9,15 @@ function Header() {
         <div className='container'>
             <div className='header-con'>
                 <div className='logo-container'>
-                <img width="150px" height="auto" className="img-responsive" src={checkpoint_logo}  alt="logo" />
+                <img width="120px" height="auto" className="img-responsive" src={checkpoint_logo}  alt="logo" />
                 </div>
                 <ul className='menu'>
                     <li className='menu-link'>
                         <a href="#">EN</a>
+                    </li>
+                    <li className='menu-link'>
+                    <a href="#"> <img src={buy_premium} width="120px"></img></a>
+
                     </li>
                 </ul>
                 <div className='mobile-menu'>

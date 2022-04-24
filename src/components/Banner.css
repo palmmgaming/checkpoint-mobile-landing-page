@@ -8,14 +8,14 @@
 }
 
 .banner-text h1 {
-  font-size: 2.5rem;
+  font-size: 38px;
   text-align: right;
   align-items: flex-end;
   font-weight: bold;
   line-height: 23px;
 }
 .banner-text p {
-  font-size: 1rem;
+  font-size: 14px;
   text-align: right;
   align-items: flex-end;
   color: rgb(125, 125, 125);
@@ -74,7 +74,7 @@
 
 .text-center h1 {
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .text-center h2 {
@@ -95,6 +95,11 @@
   color: #f580eb;
   font-size: 14px;
   font-weight: normal;
+}
+
+.mobile-showcase-image{
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-showcase-image img {
@@ -141,11 +146,17 @@
   justify-content: center;
 }
 
-.checkpoint-app-desc{
+.checkpoint-app-desc p{
   font-size: 16px;
   text-align: center;
-  font-weight:500;
-  opacity: 0.4;
+  letter-spacing: 1px;
+  color: #C4C4C4
+}
+
+.all-right-reserved p{
+  font-size: 10px;
+  text-align: center;
+  font-weight: lighter;
   letter-spacing: 1px;
 }
 
@@ -157,7 +168,72 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: rgb(34, 34, 34);
   color: white;
+  text-align: center;
+  display: block;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+}
+
+.footer-desc p{
+  font-size: 12px;
+  text-align: center;
+}
+
+.center-social-icon {
+  justify-content: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.social-icon {
+  width: 120px;
+  padding-top: 0;
+  border: 2px;
+  border-radius: 25px;
+}
+
+.social.icon {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.youtube {
+  color: #FFFF;
+}
+
+a.facebook {
+  color: #FFFF;
+}
+
+a.twitter {
+  color: #FFFF;
+}
+
+a.instagram {
+  color: #FFFF;
+}
+
+.checkpoint-footer-logo img{
+  color: white;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+}
+
+.get-premium-header p{
+  font-weight: bold;
+  font-size: 38px;
   text-align: center;
 }

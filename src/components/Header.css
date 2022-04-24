@@ -28,13 +28,20 @@
 .menu{
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
-.menu li {
-    padding-right: 2rem;
+
+.menu li{
+    padding-left: 1rem;
 }
+
 .menu li a {
     text-decoration: none;
     color: black;
+    align-items: center;
+}
+.menu-link li{
+    align-items: center;
 }
 .mobile-menu {
     display: none;
