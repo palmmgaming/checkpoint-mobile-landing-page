@@ -13,14 +13,18 @@ import Mood from "./images/mood.jpg";
 import EnvironmentIcon from "./images/Environment_icon.svg";
 import RelaxingMusicIcon from "./images/RelaxingMusic_icon.svg";
 import MusicImg from "./images/Music.jpg";
-import Usecase from "./images/Usecase.jpg";
+import Usecase from "./images/Usecase.png";
 import CheckpointIcon from "./images/checkpoint-icon.svg";
 import FeedbackImg from "./images/Community Review For Mobile.png";
-import PremiumCard from "./images/Premium Card.png";
-import MobileMockup from "./images/Mobile Mockup.png";
+// import PremiumCard from "./images/Premium Card.png";
+// import MobileMockup from "./images/Mobile Mockup.png";
 import CheckpointApp from "./images/180px logo Checkpoint.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import checkpoint_logo_white from './images/Checkpoint logo white.svg'
+import VirtualShowcase from './images/Virtual.jpg';
+import DesktopShowcase from './images/Desktop.jpg';
+import OneMonthCoupon from './images/Premium Card 1m 50.png';
+import ThreeMonthCoupon from './images/Premium Card 3m 50.png';
 import {
   faYoutube,
   faFacebook,
@@ -51,9 +55,14 @@ function Banner() {
             <h1>{bannerData.title_2} </h1>
             <h1>{bannerData.title_3} </h1>
             <p>{bannerData.desc}</p>
-            <img src={RealPhone}></img>
-
+            <div className="mobile-app-icon-right">
+              <img src={CheckpointApp}></img>
+            </div>
             <div className="sub-banner">
+            <div className="sub-banner-container">
+                <img src={DesktopShowcase}></img>
+                </div>
+                <br/>
               <div className="sub-banner-container">
                 <img src={BetterSleep}></img>
                 <p>Better Sleep</p>
@@ -112,7 +121,7 @@ function Banner() {
                   </div>
                 </div>
                 <div className="mobile-showcase-image">
-                  <img src={MobileMockup}></img>
+                  <img src={VirtualShowcase}></img>
                 </div>
               </section>
             </div>
@@ -183,7 +192,7 @@ function Banner() {
 
             <div className="content">
               <section>
-                <div className="center-icon"> </div>
+                <div className="center-icon-less-padding"> </div>
                 <div className="text-center">
                   <div className="get-premium-header">
                     <p>Get Premium</p>
@@ -193,8 +202,14 @@ function Banner() {
                 </div>
                 <div className="mobile-showcase-image">
                   <br />
-                  <img src={PremiumCard}></img>
+                  <a href="https://bit.ly/3Kx8XLs" target="_blank"><img src={OneMonthCoupon} width="250px" height="auto"></img></a>
                 </div>
+
+                <div className="mobile-showcase-image">
+                  <br />
+                  <a href="https://bit.ly/3Kx8XLs" target="_blank"><img src={ThreeMonthCoupon} width="250px" height="auto"></img></a>
+                </div>
+
 
                 <div className="text-center">
                   <div className="promotion-tag">
@@ -210,7 +225,7 @@ function Banner() {
 
             <div className="content">
               <section>
-                <div className="center-icon"> </div>
+                <div className="center-icon-less-padding"> </div>
 
                 <div className="mobile-showcase-image">
                   <div className="center-mobile-showcase-image">
@@ -230,26 +245,44 @@ function Banner() {
               <h1>{bannerData.title_2} </h1>
               <h1>{bannerData.title_3} </h1>
               <p>{bannerData.desc}</p>
-              <img src={RealPhone}></img>
+              <div className="mobile-app-icon-right">
+              <img src={CheckpointApp}></img>
+            </div>
+              <img src={DesktopShowcase}></img>
             </div>
           </div>
-
+          <br />
+                  <br />
           <div className="content">
               <section>
                 <div className="center-mobile-app-section"> </div>
 
                 <div className="mobile-showcase-image-footer">
                   <div className="download-now">
-                    <p>Coming Soon!</p>
+                    <p>Join Now</p>
                   </div>
-                  <div className="center-mobile-showcase-image">
-                    <div className="checkpoint-app">
-                    <img src={CheckpointApp}></img>
-                    <div className="checkpoint-app-desc">
-                      <p>Checkpoint.tokyo</p>
-                    </div>
-                    </div>
+                  <div className="download-now-desc">
+                    <p>Available on Desktop</p>
                   </div>
+                  <div className="center-checkpoint-icon-desc">
+                  <div className="icon-desc">
+                    <p>
+                      {" "}
+                      <img src={CheckpointIcon}></img> checkpoint.tokyo
+                    </p>
+                  </div>
+                  <br />
+                  <br />
+                  <div className="mobile-app-coming-soon">
+                    <p>Mobile Application is Coming Soon</p>
+                  </div>
+                  <div className="mobile-showcase-image">
+                  <img src={RealPhone}></img>
+                </div>
+                  </div>
+
+
+
                   <br />
                   <br />
                   <br />
@@ -266,24 +299,39 @@ function Banner() {
                 <div className="mobile-showcase-image-footer">
                   <div className="footer-desc">
                     <br/>
-                    <p href="https://www.checkpoint.tokyo/about">About Us</p>
-                    <p href="https://www.checkpoint.tokyo/policy">Policy</p>
+                    <br/>
+                    <a href="https://www.checkpoint.tokyo/about" target="_blank">About Us</a>
+                  </div>
+
+                  <div className="footer-desc">
+                    <a href="https://www.checkpoint.tokyo/policy" target="_blank">Policy</a>
+                  </div>
+
+                  <div className="footer-desc">
+                    <a href="mailto: inquiry@checkpoint.tokyo" target="_blank">Partnership with us</a>
                     <br/>
                   </div>
+                  <br/>
+
                   <div className="center-social-icon">
                     <div className="social.icon">
-                    <a href="https://twitter.com/CheckpointTokyo" className="twitter social">
+                    <a href="https://twitter.com/CheckpointTokyo" 
+                    target="_blank"
+                    className="twitter social">
                     <FontAwesomeIcon icon={faTwitter} size="1x" />
                   </a>
-                  <a href="https://www.facebook.com/Checkpoint.tokyo"
+                  <a href="https://www.facebook.com/Checkpoint.tokyo" 
+                    target="_blank"
                     className="facebook social">
                     <FontAwesomeIcon icon={faFacebookSquare} size="1x" />
                   </a>
                   <a href="https://www.instagram.com/checkpoint.tokyo/"
+                    target="_blank"
                     className="instagram social">
                     <FontAwesomeIcon icon={faInstagram} size="1x" />
                   </a>
                   <a href="https://www.youtube.com/channel/UCyBC6LyIUwznEpO6pRt9pEg/featured"
+                    target="_blank"
                     className="youtube social">
                     <FontAwesomeIcon icon={faYoutube} size="1x" />
                   </a>

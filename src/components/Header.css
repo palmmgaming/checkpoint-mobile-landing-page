@@ -4,13 +4,12 @@
   
 .container {
     max-width: 960px;
-    margin: 0 auto;
 }
 
 .header{
     background: white;
     height: 50px;
-    border-bottom: 1px solid rgb(195, 195, 195);
+    /* border-bottom: 1px solid rgb(195, 195, 195); */
 }
 .header-con{
     display: flex;

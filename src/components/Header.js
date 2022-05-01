@@ -12,11 +12,11 @@ function Header() {
                 <img width="120px" height="auto" className="img-responsive" src={checkpoint_logo}  alt="logo" />
                 </div>
                 <ul className='menu'>
-                    <li className='menu-link'>
+                    {/* <li className='menu-link'>
                         <a href="#">EN</a>
-                    </li>
+                    </li> */}
                     <li className='menu-link'>
-                    <a href="#"> <img src={buy_premium} width="120px"></img></a>
+                    <a href="https://bit.ly/3Kx8XLs" target="_blank"> <img src={buy_premium} width="100px"></img></a>
 
                     </li>
                 </ul>
