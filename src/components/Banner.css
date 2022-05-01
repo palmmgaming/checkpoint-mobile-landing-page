@@ -1,20 +1,19 @@
-* {
-  font-family: 'Inter', sans-serif;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
 .banner-text h1 {
+  margin: 20px;
   font-size: 38px;
   text-align: right;
   align-items: flex-end;
   font-weight: bold;
   line-height: 23px;
 }
+
 .banner-text p {
+  margin: 20px;
   font-size: 14px;
   text-align: right;
   align-items: flex-end;
@@ -37,6 +36,13 @@
   text-align: center;
 }
 
+.sub-banner-container-top {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
 .sub-banner-container {
   position: relative;
   width: 100%;
@@ -54,7 +60,7 @@
   transform: translate(-50%, -50%);
   color: white;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -80,7 +86,7 @@
 
 .text-center h1 {
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .text-center h2 {
@@ -94,7 +100,7 @@
   font-weight: lighter;
   text-align: center;
   color: black;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .icon-desc p {
@@ -104,6 +110,20 @@
 }
 
 .mobile-showcase-image{
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-showcase-image-virtual-space{
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-showcase-image-feedback{
+  margin-right: 15px;
+  margin-left: 15px;
   display: flex;
   justify-content: center;
 }
@@ -158,6 +178,7 @@
   text-align: center;
   font-weight: lighter;
   letter-spacing: 1px;
+  padding-bottom: 40px;
 }
 
 .footer{
@@ -187,7 +208,6 @@
 .footer-desc{
   padding-bottom: 10px;
 }
-
 
 .footer-desc a{
   color: white;
@@ -238,6 +258,7 @@ a.instagram {
 }
 
 .checkpoint-footer-logo img{
+  margin-bottom: 20px;
   color: white;
   justify-content: center;
   text-align: center;
@@ -245,6 +266,7 @@ a.instagram {
 }
 
 .get-premium-header p{
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 38px;
   text-align: center;
@@ -258,6 +280,7 @@ a.instagram {
 }
 
 .download-now-desc p{
+  margin-bottom: 10px;
   font-size: 16px;
   text-align: center;
   font-weight: lighter;
@@ -284,5 +307,6 @@ a.instagram {
 }
 
 .mobile-app-icon-right img{
+  margin-right: 20px;
   border-radius: 5px;
 }

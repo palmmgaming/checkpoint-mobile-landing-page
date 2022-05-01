@@ -59,7 +59,7 @@ function Banner() {
               <img src={CheckpointApp}></img>
             </div>
             <div className="sub-banner">
-            <div className="sub-banner-container">
+            <div className="sub-banner-container-top">
                 <img src={DesktopShowcase}></img>
                 </div>
                 <br/>
@@ -143,7 +143,7 @@ function Banner() {
                     </p>
                   </div>
                 </div>
-                <div className="mobile-showcase-image">
+                <div className="mobile-showcase-image-virtual-space">
                   <img src={Mood}></img>
                 </div>
               </section>
@@ -156,7 +156,7 @@ function Banner() {
                 </div>
                 <div className="text-center">
                   <h1>Enjoy With Relaxing Music</h1>
-                  <p>Charge Your Energy</p>
+                  <p>to Charge Your Energy</p>
                   <div className="icon-desc">
                     <p>
                       {" "}
@@ -227,7 +227,7 @@ function Banner() {
               <section>
                 <div className="center-icon-less-padding"> </div>
 
-                <div className="mobile-showcase-image">
+                <div className="mobile-showcase-image-feedback">
                   <div className="center-mobile-showcase-image">
                     <img src={FeedbackImg}></img>
                   </div>
